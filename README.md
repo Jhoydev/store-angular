@@ -1,4 +1,5 @@
 # MyStore
+<img width="1666" alt="image" src="https://github.com/Jhoydev/store-angular/assets/28726329/d503eaaa-d854-4fc7-8625-62309a8e204d">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
 
