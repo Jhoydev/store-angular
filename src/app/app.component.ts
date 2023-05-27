@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import productsMock from './products.json';
-import { ProductModel } from './product.model';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +6,4 @@ import { ProductModel } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  products: ProductModel[] = productsMock;
 }

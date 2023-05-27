@@ -1,0 +1,21 @@
+.container {
+  padding: 20px 50px;
+}
+
+.content-products {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media screen and (min-width: 40em) {
+  .content-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+}
+@media screen and (min-width: 80em) {
+  .content-products {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
