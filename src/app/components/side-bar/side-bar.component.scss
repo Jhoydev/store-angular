@@ -24,7 +24,7 @@
     color: #98ca3f;
   }
 
-  .closebtn {
+  .close-btn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -33,7 +33,7 @@
   }
 }
 
-.openbtn {
+.open-btn {
   cursor: pointer;
   font-size: 20px;
   color: black;
@@ -52,6 +52,6 @@
   .sidebar a {font-size: 18px;}
 }
 
-.showMenu {
+.show-menu {
   width: 250px;
 }
