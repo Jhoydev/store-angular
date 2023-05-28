@@ -6,13 +6,13 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./img.component.scss']
 })
 export class ImgComponent {
-  @Input() img: string = ''
+  @Input() img = ''
   @Output() loaded = new EventEmitter<string>();
-  public imageDefault: string = './assets/images/default.jpg'
+  public imageDefault = './assets/images/default.jpg'
 
   public imgError(): void {
     this.img = this.imageDefault;
-  };
+  }
 
   imgLoaded(): void {
     this.loaded.emit('ok')
