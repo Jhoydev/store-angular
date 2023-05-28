@@ -1,5 +1,6 @@
 <div *ngIf="product" class="content-product">
-  <app-img [img]="product.image"></app-img>
-  <h2>{{ product.price }}</h2>
+  <app-img [img]="product.images[0]"></app-img>
+  <h2>{{ product.price | currency: '€' }}</h2>
   <p title="{{ product.title }}">{{ product.title }}</p>
+  <button type="button" (click)="addProduct(product)">Add Product</button>
 </div>

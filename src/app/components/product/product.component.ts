@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Product } from '../../models/product';
 
 @Component({
@@ -8,5 +8,9 @@ import { Product } from '../../models/product';
 })
 export class ProductComponent {
   @Input() product: Product | undefined = undefined;
-  protected readonly undefined = undefined;
+  @Output() addedProduct: EventEmitter<Product> = new EventEmitter<Product>();
+
+  addProduct(product: Product): void {
+    this.addedProduct.emit(product)
+  }
 }
