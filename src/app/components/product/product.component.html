@@ -2,5 +2,6 @@
   <app-img [img]="product.images[0]"></app-img>
   <h2>{{ product.price | currency: '€' }}</h2>
   <p title="{{ product.title }}">{{ product.title }}</p>
+  <button type="button" (click)="onShowDetail(product.id)">Show</button>
   <button type="button" (click)="addProduct(product)">Add Product</button>
 </div>

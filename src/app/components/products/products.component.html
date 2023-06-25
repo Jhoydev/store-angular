@@ -9,6 +9,20 @@
       *ngFor="let product of products"
       [product]="product"
       (addedProduct)="addToShoppingCart($event)"
+      (showDetail)="onShowDetail($event)"
     ></app-product>
+  </div>
+  <button *ngIf="showLoadMore" type="button" (click)="loadProducts()">Load more</button>
+  <div class="product-detail" [class.active]="showProductDetail">
+    <div *ngIf="productChosen">
+      <button (click)="toggleProductDetail()">close</button>
+      <h1>{{ productChosen.title }}</h1>
+      <swiper-container slides-per-view="1">
+        <swiper-slide *ngFor="let img of productChosen.images">
+          <img [src]="img" [alt]="productChosen.title">
+        </swiper-slide>
+      </swiper-container>
+      <p>{{ productChosen.description }}</p>
+    </div>
   </div>
 </div>
